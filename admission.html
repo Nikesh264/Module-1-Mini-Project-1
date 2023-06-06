@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Admission</title>
+    </head>
+    <body style="background-color:lightpink;">
+        <div style="border: 0;height: 100px;width: 150px;float: left;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7CSJFSVsKxM8KD-umjCwbKp5-sowiOlUNUVJZ8tUYg&s" alt="SRU University LOGO" width="100" height="100">
+        </div>
+        <div style="border: 0;height: 100px;width: 150px;float: left;">
+            <h1 style="color: blue;">SR University</h1>
+        </div>   
+        <div style="border: 0;height: 100px;width: 300px;float: left;text-align: center;">
+            <h2><center><a target="_blank" href="home.html" style="text-decoration-line: none;">HOME</a></center></h2>
+        </div>
+        <div style="border: 0;height: 100px;width: 300px;float: left;text-align: center;">
+            <h2><center><a target="_blank" href="academics.html" style="text-decoration-line: none;">ACADEMICS</a></center></h2>
+        </div>   
+        <div style="border: 0;height: 100px;width: 300px;float: left;text-align: center;">
+            <h2><center><a target="_blank" href="admission.html" style="text-decoration-line: none;">ADMISSION</a></center></h2>
+        </div> 
+        <div style="border: 0;height: 100px;width: 300px;float:left;">
+            <h2><center><a target="_blank" href="gallery.html" style="text-decoration-line: none;">GALLERY</a></center></h2>
+        </div>
+        <fieldset >
+            <legend>Application Form</legend>
+            <form action="abc.php" method="post">
+                <center>
+                <table border="0" cellspacing="5px">
+                    <tr>
+                        <td>First Name : </td> 
+                        <td><input type="text" name="firstname"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name : </td>
+                        <td><input type="text" name="lastname"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number : </td>
+                        <td><input type="tel" id="phone" name="phone" pattern="[1-9]{1}[0-9]{9}" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email : </td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender : </td>
+                        <td><input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="female">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Father Name : </td>
+                        <td><input type="text" name="fathername"></td>
+                    </tr>
+                    <tr>
+                        <td>Mother Name : </td>
+                        <td><input type="text" name="mothername"></td>
+                    </tr>
+                    <tr>
+                        <td>Alternative Phone Number : </td>
+                        <td><input type="tel" id="phone" name="alt phone" pattern="[1-9]{1}[0-9]{9}" required></td>
+                    </tr>
+                    <tr>
+                        <td>Address : </td>
+                        <td><input type="text" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td>Aadhar Number : </td>
+                        <td><input type="text" id="Aadhar" name="Aadhar" placeholder="1234-4567-6789" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required></td>
+                    </tr>
+                    <tr>
+                        <td><mark>Class 12<sup>th</sup> Details : </mark></td>
+                    </tr>
+                    <tr>
+                        <td>College Name : </td>
+                        <td><input type="text" name="class 12">    
+                    </tr>
+                    <tr>
+                        <td>Course : </td>
+                        <td><select name="course">
+                            <option value="mpc">MPC</option>
+                            <option value="bipc">BIPC</option>
+                            <option value="cec">CEC</option>
+                            <option value="hec">HEC</option>
+                        </select></td>    
+                    </tr>
+                    <tr>
+                        <td>Marks Secured : </td>
+                        <td><input type="number" name="marks12" min="1" max="1000">    
+                    </tr>
+                    <tr>
+                        <td><mark>Class 10<sup>th</sup> Details : </mark></td>
+                    </tr>
+                    <tr>
+                        <td>School Name : </td>
+                        <td><input type="text" name="class 10">    
+                    </tr>
+                    <tr>
+                        <td>Marks Secured : </td>
+                        <td><input type="number" name="marks10" min="1" max="600">    
+                    </tr>
+                    <tr>
+                        <td>Select the Entrance Test : </td>
+                        <td><select name="test">
+                            <option value="eamcet">TSEAMCET</option>
+                            <option value="JEE">JEE MAINS</option>
+                            <option value="clg">SRUSAT</option>
+                            <option value="none">Intermediate</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter the Rank of Selected Exam(not for Intermediate option) : </td>
+                        <td><input type="number" name="rank"></td>
+                    </tr>
+                    <tr>
+                        <td>Select the <mark>Stream</mark> : </td>
+                        <td><select name="course">
+                            <option value="CSE">B.Tech - CSE</option>
+                            <option value="ECE">B.Tech - ECE</option>
+                            <option value="EEE">B.Tech - EEE</option>
+                            <option value="MECH">B.Tech - Mechanical Engineering</option>
+                            <option value="CIVIL">B.Tech - Civil Engineering</option>
+                            <option value="aiml">B.Tech - (CSE)-AIML </option>
+                            <option value="ds">B.Tech - (CSE)-Data Science </option>
+                            <option value="cyber">B.Tech - (CSE)-Cyber Security </option>
+                            <option value="marketing">BBA- Marketing</option>
+                            <option value="Toursim">BBA- Tourism</option>
+                            <option value="Finanace">BBA - Finanace</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><br><button type="button" onclick="alert('Thank For Applying. We will let you know your admission through provided mobile number and email')">SUBMIT</td>
+                    </tr>
+                </table>
+                </center>
+            </form>
+        </fieldset>
+    </body>
+</html>
+ 
+                   
